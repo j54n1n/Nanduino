@@ -31,6 +31,29 @@
                             "version": "2.0-a5"
                         }
                     ]
+                },
+                {
+                    "name": "Nanduino AVR Boards",
+                    "architecture": "avr",
+                    "version": "0.1.0-b",
+                    "category": "Contributed",
+                    "help": { "online": "https://github.com/j54n1n/nanduino/issues" },
+                    "url": "https://github.com/j54n1n/nanduino/raw/beta/core-v0.1.0-a/nanduino-avr.zip",
+                    "archiveFileName": "nanduino-avr.zip",
+                    "checksum": "SHA-256:de0caadc5712bd9dbc52f59f03b02305e9addd7827a58258d3ec37675a602fb6",
+                    "size": "170013",
+                    "boards": [
+                        { "name": "Nanduino Tiny84" },
+                        { "name": "Nanduino Tiny841" },
+                        { "name": "Nanduino Tiny85" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "nanduino",
+                            "name": "micronucleus",
+                            "version": "2.0-a4"
+                        }
+                    ]
                 }
             ],
             "tools": [
@@ -65,6 +88,40 @@
                             "archiveFileName": "micronucleus-win32.zip",
                             "size": "137238",
                             "checksum": "SHA-256:6f8b906ed18f51e44230251268f4749aff7a724c7c7d3487c2a4afdc3bf739dd"
+                        }
+                    ]
+                },
+                {
+                    "name":"micronucleus",
+                    "version":"2.0-a4",
+                    "systems": [
+                        {
+                            "host": "x86_64-apple-darwin",
+                            "url": "https://github.com/j54n1n/nanduino/raw/tools/micronucleus-v2.0a4/micronucleus-osx.tar.gz",
+                            "archiveFileName": "micronucleus-osx.tar.gz",
+                            "size": "41335",
+                            "checksum": "SHA-256:cff5100461b8adf20c995dac70c18e51c0b94fc6538d242a87d7947dca1ba19c"
+                        },
+                        {
+                            "host": "x86_64-linux-gnu",
+                            "url": "https://github.com/j54n1n/nanduino/raw/tools/micronucleus-v2.0a4/micronucleus-linux64.tar.gz",
+                            "archiveFileName": "micronucleus-linux64.tar.gz",
+                            "size": "20183",
+                            "checksum": "SHA-256:ce50be3083c05c8089b45b5a5078543bf90292a3aacc8a00072b5a536d040ad2"
+                        },
+                        {
+                            "host": "i686-linux-gnu",
+                            "url": "https://github.com/j54n1n/nanduino/raw/tools/micronucleus-v2.0a4/micronucleus-linux32.tar.gz",
+                            "archiveFileName": "micronucleus-linux32.tar.gz",
+                            "size": "19123",
+                            "checksum": "SHA-256:d86fd41e42be40d446a544a6c528809c7fbde18bdfc45f4dbfa87b0744d2ef49"
+                        },
+                        {
+                            "host": "i686-mingw32",
+                            "url": "https://github.com/j54n1n/nanduino/raw/tools/micronucleus-v2.0a4/micronucleus-win32.zip",
+                            "archiveFileName": "micronucleus-win32.zip",
+                            "size": "13187",
+                            "checksum": "SHA-256:11824684d4c623f80125b66c112bcd859df95f8697eeb689da0b8daec0995dca"
                         }
                     ]
                 }
