@@ -96,6 +96,22 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 
 #define digitalPinToInterrupt(p)    ( ((p) == 9) ? 0 : NOT_AN_INTERRUPT)
 
+#  define DDR_USI DDRA
+#  define PORT_USI PORTA
+#  define PIN_USI PINA
+#  define PORT_USI_SDA PORTA6
+#  define PORT_USI_SCL PORTA4
+#  define PIN_USI_SDA PINA6
+#  define PIN_USI_SCL PINA4
+#  define USI_START_VECTOR USI_START_vect
+#  define USI_OVERFLOW_VECTOR USI_OVF_vect
+#  define DDR_USI_CL DDR_USI
+#  define PORT_USI_CL PORT_USI
+#  define PIN_USI_CL PIN_USI
+#ifndef USI_START_COND_INT
+#  define USI_START_COND_INT USISIF
+#endif
+
 #ifdef ARDUINO_MAIN
 
 // these arrays map port names (e.g. port B) to the
