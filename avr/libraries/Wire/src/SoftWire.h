@@ -53,7 +53,7 @@ public:
   void end(void) {
   }
 
-  void setClock(uint32_t _) {
+  void setClock(uint32_t) {
   }
 
   void beginTransmission(uint8_t address) {

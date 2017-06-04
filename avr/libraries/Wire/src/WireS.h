@@ -69,7 +69,7 @@ struct i2cStruct {
     volatile char     startCount;            // repeated START count              (User&ISR)
     volatile uint16_t Addr;                  // Tx/Rx address                     (User&ISR)
     boolean (*user_onAddrReceive)(uint16_t, uint8_t);  // Slave Addr Callback Function      (User)
-    void (*user_onReceive)(size_t);          // Slave Rx Callback Function        (User)
+    void (*user_onReceive)(int);          // Slave Rx Callback Function        (User)
     void (*user_onRequest)(void);            // Slave Tx Callback Function        (User)
     void (*user_onStop)(void);               // Stop Callback Function            (User)
 };
@@ -97,7 +97,7 @@ class i2c_tinyS : public Stream {
         inline size_t write(unsigned int n)  { return write((uint8_t)n); }
         inline size_t write(int n)           { return write((uint8_t)n); }
         size_t write(const uint8_t* data, size_t quantity);
-        inline size_t write(const char* str) { write((const uint8_t*)str, strlen(str)); }
+        inline size_t write(const char* str) { return write((const uint8_t*)str, strlen(str)); }
         inline int available(void) { return i2c->rxBufferLength - i2c->rxBufferIndex; }
         static int read_(struct i2cStruct* i2c);
         inline int read(void) { return read_(i2c); }
@@ -111,7 +111,7 @@ class i2c_tinyS : public Stream {
         inline uint16_t getRxAddr(void) { return i2c->Addr; }
         inline size_t getTransmitBytes(void) { return i2c->txBufferIndex; }
         inline void onAddrReceive(boolean (*function)(uint16_t, uint8_t)) { i2c->user_onAddrReceive = function; }
-        inline void onReceive(void (*function)(size_t)) { i2c->user_onReceive = function; }
+        inline void onReceive(void (*function)(int)) { i2c->user_onReceive = function; }
         inline void onRequest(void (*function)(void)) { i2c->user_onRequest = function; }
         inline void onStop(void (*function)(void)) { i2c->user_onStop = function; }
 };
