@@ -38,10 +38,10 @@
                     "version": "0.1.0-b",
                     "category": "Contributed",
                     "help": { "online": "https://github.com/j54n1n/nanduino/issues" },
-                    "url": "https://github.com/j54n1n/nanduino/raw/beta/core-v0.1.0-a/nanduino-avr.zip",
+                    "url": "https://github.com/j54n1n/nanduino/raw/beta/core-v0.1.0-b/nanduino-avr.zip",
                     "archiveFileName": "nanduino-avr.zip",
-                    "checksum": "SHA-256:de0caadc5712bd9dbc52f59f03b02305e9addd7827a58258d3ec37675a602fb6",
-                    "size": "170013",
+                    "checksum": "SHA-256:cd0caadafbeab9f28541a45f1713c704a0ea7d897df9f445eb60b4c43168b27c",
+                    "size": "217291",
                     "boards": [
                         { "name": "Nanduino Tiny84" },
                         { "name": "Nanduino Tiny841" },
