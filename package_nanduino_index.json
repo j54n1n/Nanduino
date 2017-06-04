@@ -54,6 +54,29 @@
                             "version": "2.0-a4"
                         }
                     ]
+                },
+                {
+                    "name": "Nanduino AVR Boards",
+                    "architecture": "avr",
+                    "version": "0.1.0-c",
+                    "category": "Contributed",
+                    "help": { "online": "https://github.com/j54n1n/nanduino/issues" },
+                    "url": "https://github.com/j54n1n/nanduino/raw/beta/core-v0.1.0-c/nanduino-avr.zip",
+                    "archiveFileName": "nanduino-avr.zip",
+                    "checksum": "SHA-256:0f624bdadbc6ccc04f91dbb03fb13daf7ad77455d7bf469d67f80d491b84a1d2",
+                    "size": "336141",
+                    "boards": [
+                        { "name": "Nanduino Tiny84" },
+                        { "name": "Nanduino Tiny841" },
+                        { "name": "Nanduino Tiny85" }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "nanduino",
+                            "name": "micronucleus",
+                            "version": "2.0-a4"
+                        }
+                    ]
                 }
             ],
             "tools": [
