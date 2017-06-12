@@ -23,6 +23,7 @@
 
 #ifdef USIDR
 #include <inttypes.h>
+#include <stddef.h>
 
 // Buffer sizes are defined in USI_TWI_Slave/USI_TWI_Slave.h
 extern const uint8_t WIRE_BUFFER_LENGTH;
